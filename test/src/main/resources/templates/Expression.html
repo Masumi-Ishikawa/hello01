@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>発表者</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link th:href="@{/css/login.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>発表者</h2>
+<div class="center">
+<span style="color: red;font-size: 50px;" th:text="${name}"></span>
+</div>
+<form method="post" action="/Expression">
+	<input id="login" type="button" value="抽選">
+</form>
+<script th:src="@{/js/login.js}" type="text/javascript"></script>
+</body>
+</html>
